@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Celestia | Submit a PFB</title>
+        
+        <link rel="icon" type="image/x-icon" href="images/icon-white.png"/>
+        <link rel="stylesheet" href="styles.css"/>
+        
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"/>
+        <script src="index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="main">
+            <img class="page_logo" src="images/Celestia-logo-black.png"/>
+            
+            <p>Here you can generate & submit your PFB transaction to a light node! (or any node for that matter)</p>
+            <p>If everything's successful, a new window will pop out & show the transaction on MintScan explorer.</p>
+            
+            <form id="main_form">
+                <input type="text" id="namespace_id" name="namespace_id" placeholder="Namespace ID"/>
+                <input type="text" id="namespace_data" name="namespace_data" placeholder="Namespace Data"/>
+                <hr/>
+                <input type="text" id="server_ip" name="server_ip" placeholder="IP address" required/>
+                <input type="text" id="port" name="port" placeholder="Port (e.g. 26669)" required/>
+                <br/>
+                <div id="progress-bar">
+                    <div id="progress-bar-value"></div>
+                </div>
+                <input type="button" id="generate" onClick="setValue()" value="Generate"/>
+                <input type="button" id="submit" onClick="submitTX()"value="Submit"/>
+                <br/>
+            </form>
+            <br/>
+            <hr/>
+            <footer>Made by @ksalab | 2023</footer>
+        </div>
+    </body>
+</html>
