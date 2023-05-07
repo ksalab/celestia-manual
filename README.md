@@ -78,4 +78,4 @@ You may host the website anywhere you want - just drop all the contents of a ‘
 
 Demo website: **http://xbee.space**
 
-Demo node (IP & port): **xbee.space, 5445**
+Demo node (IP & port): **xbee.space, 5555**
